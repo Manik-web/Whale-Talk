@@ -1,0 +1,25 @@
+let input = 'a whale of a deal!';
+input = input.toLowerCase();
+//console.log(input);
+
+const vowels = ['a','e','i','o','u'];
+
+let resultArray = [];
+
+for (let i=0;i< input.length;i++) {
+ // console.log(`${i} `+input.charAt(i));
+ for(let j=0;j< vowels.length;j++){
+   if (input[i] === vowels[j]){
+     if (input[i]==='u'||input[i]==='e'){
+     resultArray.push(input.charAt(i));
+     resultArray.push(input.charAt(i));
+   } else {
+     resultArray.push(input.charAt(i));
+   }
+ }
+}
+}
+let joinedString = resultArray.join('');
+joinedString = joinedString.toUpperCase();
+console.log(joinedString);
+
